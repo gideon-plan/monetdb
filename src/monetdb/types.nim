@@ -1,6 +1,6 @@
 ## MonetDB/e types and error mapping.
 
-{.push strictFuncs.}
+{.experimental: "strict_funcs".}
 
 import std/times
 import basis/code/choice

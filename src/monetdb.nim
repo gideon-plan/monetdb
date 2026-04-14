@@ -3,7 +3,7 @@
 ## Two-layer wrapper: ffi.nim (raw C bindings) + this file (idiomatic Nim API).
 ## All public boundaries return Choice[T].
 
-{.push strictFuncs.}
+{.experimental: "strict_funcs".}
 
 import std/times
 import basis/code/choice

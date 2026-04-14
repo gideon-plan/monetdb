@@ -1,7 +1,7 @@
 ## MonetDB/e C FFI bindings.
 ## Dynamic link to libmonetdbe.so.
 
-{.push strictFuncs.}
+{.experimental: "strict_funcs".}
 
 {.pragma: mdb_hdr, header: "/usr/include/monetdb/monetdbe.h".}
 {.pragma: mdb_lib, dynlib: "libmonetdbe.so".}
