@@ -54,8 +54,8 @@ let NullField* = Field(kind: fkNull)
 func check_error*(msg: cstring): Choice[void] =
   ## Maps a MonetDB error cstring to Choice.
   if msg.isNil:
-    return Good[void]()
-  Bad[void]($msg)
+    return good()
+  bad[void]("monetdb", $msg)
 
 func map_type*(t: ffi.Types): FieldKind =
   case t
